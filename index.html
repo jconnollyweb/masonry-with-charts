@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Assessment</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+   
+     google.charts.load("current", {packages:["corechart"]});
+     google.charts.setOnLoadCallback(drawChart);
+     function drawChart() {
+     var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Building this page',     11],
+      ['Eat',      2],
+      ['Talking to Cat',  2],
+      ['Watch TV', 2],
+      ['Sleep',    7]
+    ]);
+
+    var options = {
+      title: 'My Daily Activities',
+      is3D: true,
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+    chart.draw(data, options);
+  }
+</script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>John Connolly Practical Assessessment</h1>
+
+        <ul>
+            <li><a href="http://www.jconnollyweb.com/" target="_blank">PORTFOLIO</a></li>
+            <li><a href="https://github.com/jconnollyweb" target="_blank">GITHUB</a></li>
+            <li><a href="https://www.linkedin.com/in/john-connolly-web/" target="_blank">LINKEDIN</a></li>
+        </ul>
+    </header>
+
+    <div class="slideshow-container">
+  
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div> 
+          <img src="img/001.jpg" alt=""  style="width:100%">
+           <div class="text">Classic Cars</div> 
+        </div>
+      
+        <div class="mySlides fade">
+             <div class="numbertext">2 / 6</div> 
+            <img src="img/002.jpg" alt="" style="width:100%">
+             <div class="text">Classic Cars</div> 
+          </div>
+      
+        <div class="mySlides fade">
+           <div class="numbertext">3 / 6</div> 
+          <img src="img/003.jpg" alt="" style="width:100%">
+           <div class="text">Classic Cars</div> 
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 6</div> 
+          <img src="img/004.jpg" alt="" style="width:100%">
+           <div class="text">Classic Cars</div> 
+        </div>
+      
+        <div class="mySlides fade">
+         <div class="numbertext">5 / 6</div> 
+          <img src="img/005.jpg" alt="" style="width:100%">
+           <div class="text">Classic Cars</div> 
+        </div>
+      
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+          <img src="img/006.jpg" alt="" style="width:100%">
+           <div class="text">Classic Cars</div> 
+        </div>
+      
+
+    <div class="container">
+
+        <h2>Masonry Gallery with Pop ups</h2>
+
+        <div class="grid">
+
+            <div class="grid-col grid-col--1">
+
+            </div>
+
+            <div class="grid-col grid-col--2">
+                
+            </div>
+
+            <div class="grid-col grid-col--3">
+                
+            </div>
+
+            <div class="grid-col grid-col--4">
+                
+            </div>
+
+            
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/001.jpg" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">classic Cars</h3>
+
+
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                         <button class="btn" type="button">Click</button> 
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/002.jpg" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/003.jpg" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+            
+
+            
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/004.jpg" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/005.jpg" alt="img">
+                        
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/006.jpg" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+            
+
+            
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/background1.png" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/background2.png" alt="img">
+
+                    </div>
+                    <h3 class="card_title">Classic Cars</h3>
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="card_img">
+
+                        <img class="car-image" src="img/background3.png" alt="img">
+
+                    </div>
+
+                    <h3 class="card_title">Classic Cars</h3>
+
+                    <p class="card_para">
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit officiis qui
+
+                        reiciendis unde nisi exercitationem quia. Eaque accusantium dolore modi numquam maxime? Animi
+
+                        sint, tenetur ex incidunt cupiditate neque!
+
+                    </p>
+
+                    <section>
+                        <button class="btn" type="button">Click</button>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal-parent">
+            <div class="modal">
+                <h2>Classic Cars</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ea corporis mollitia eos repellat, libero natus quibusdam saepe obcaecati quia maxime eum rem magni distinctio, provident optio iusto in repudiandae. Corporis velit, cumque dolore harum atque ipsam cupiditate doloremque. Harum tempora pariatur quo rem deserunt aut alias esse odit atque eos voluptate a sequi, accusantium magni explicabo exercitationem eius neque illo. Vel corporis, praesentium aspernatur officiis facere incidunt expedita quasi commodi nulla numquam ad quos itaque aperiam voluptas repudiandae suscipit, fuga eius rem qui est animi culpa! Veritatis et fuga culpa, magnam aliquam blanditiis nulla soluta rem voluptatum aliquid possimus?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam ea corporis mollitia eos repellat, libero natus quibusdam saepe obcaecati quia maxime eum rem magni distinctio, provident optio iusto in repudiandae. Corporis velit, cumque dolore harum atque ipsam cupiditate doloremque. Harum tempora pariatur quo rem deserunt aut alias esse odit atque eos voluptate a sequi, accusantium magni explicabo exercitationem eius neque illo. Vel corporis, praesentium aspernatur officiis facere incidunt expedita quasi commodi nulla numquam ad quos itaque aperiam voluptas repudiandae suscipit, fuga eius rem qui est animi culpa! Veritatis et fuga culpa, magnam aliquam blanditiis nulla soluta rem voluptatum aliquid possimus?
+                </p>
+                <span class="X" draggable="true">&times;</span>  
+                
+            </div>
+        </div>
+
+        <div class="google-charts">
+            <div class="left-chart">
+                <h2>My Portfolio's popularity by location</h2>
+                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+            </div>
+
+            <div class="right-chart">
+                <h2> My schedule for the last two days</h2>
+                 <div id="piechart_3d" style="width: 900px; height: 500px;"></div> 
+
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li><a href="http://www.jconnollyweb.com/" target="_blank">PORTFOLIO</a></li>
+                <li><a href="https://github.com/jconnollyweb" target="_blank">GITHUB</a></li>
+                <li><a href="https://www.linkedin.com/in/john-connolly-web/" target="_blank">LINKEDIN</a></li>
+            </ul>
+
+            <div class="right-footer">
+                <h1> John Connolly Practical Assessment</h1>
+            </div>
+        </footer>
+
+       
+        
+
+    
+
+    
+
+    
+       
+       <script src="https://unpkg.com/colcade@0/colcade.js"></script>
+
+<script>
+    var colc = new Colcade( '.grid', {
+columns: '.grid-col',
+items: '.card'
+});
+
+</script>
+
+<script src="js/main.js"></script>
+
+
+
+
+
+    
+
+   
+
+</body>
+
+</html>
